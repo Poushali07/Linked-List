@@ -1,0 +1,13 @@
+//recursive approach
+    public void get_last_element(Node head, int pos)
+    {
+        int i =0;
+        if(head == null)
+         return;
+        get_last_element(head.next, pos);
+
+        if(++i == pos)
+            System.out.println(head.data);
+    }
+
+    //iterative approach - find length - pos +1
