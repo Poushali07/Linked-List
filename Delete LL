@@ -1,0 +1,4 @@
+public void delete_LL()
+    {
+        head = null;
+    }
