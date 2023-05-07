@@ -1,0 +1,12 @@
+public boolean search(int element)
+    {
+        Node curr = head;
+        while(curr.next != null)
+        {
+            if(curr.data == element)
+                return true;
+            else
+                curr = curr.next;
+        }
+        return false;
+    }
