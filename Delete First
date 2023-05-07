@@ -1,0 +1,6 @@
+public void delete()
+    {
+      if(head == null)
+          System.out.println("empty list");
+      head = head.next;
+    }
