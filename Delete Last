@@ -1,0 +1,20 @@
+public void delete_end()
+    {
+        if(head == null)
+            System.out.println("empty list");
+        if(head.next == null)
+        {
+            head = null;
+            return;
+        }
+
+        Node secondlast  = head;
+        Node last = head.next;
+
+        while(last.next != null)
+        {
+            secondlast = secondlast.next;
+            last = last.next;
+        }
+        secondlast.next = null;
+    }
