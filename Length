@@ -1,0 +1,13 @@
+public int length()
+    {
+        int size = 0;
+        if(head == null)
+            return size;
+        Node curr = head;
+        while(curr != null)
+        {
+            size++;
+            curr = curr.next;
+        }
+        return size;
+    }
