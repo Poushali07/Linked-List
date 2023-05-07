@@ -1,0 +1,22 @@
+public class LinkedList
+{    
+    Node head;
+    
+    class Node
+    {
+        int data;
+        Node next;
+        
+        Node(int d)
+        {
+            d = data;
+            next = null;
+        }
+    }
+    
+    public static void main(String[] args)
+    {
+        LinkedList list = new LinkedList();
+        //function calls
+    }
+}
