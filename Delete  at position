@@ -1,0 +1,25 @@
+ public void delete_pos(int pos)
+    {
+        if(head == null)
+            return;
+
+        Node curr = head;
+
+        if(pos == 0)
+        {
+            head = curr.next;
+            return;
+        }
+
+        //finding the prev node of the to be delete node
+        for(int i =0; curr != null && i  < pos -1; i++) {
+            curr = curr.next;
+
+            //pos is greater than the no of nodes
+            if (curr == null || curr.next == null)
+                return;
+
+            Node next = curr.next.next; //storing
+            curr.next = next;           // unlink
+        }
+    }
